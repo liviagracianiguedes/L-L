@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E8D5F2">
+    <meta name="description" content="Salão de Beleza - Cabelo e Unha. Agende seu horário!">
+    <title>L&L - Salão de Beleza</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">L&L</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-tag">✨ Seu momento de beleza</span>
+            <h1 class="hero-title">
+                Transforme seu visual<br>
+                <span class="highlight">com quem entende</span>
+            </h1>
+            <p class="hero-desc">
+                Especialistas em cabelo e unha para realçar sua beleza natural. 
+                Agende agora e viva uma experiência única de cuidado e bem-estar.
+            </p>
+            <div class="hero-buttons">
+                <a href="#agendar" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar Horário
+                </a>
+                <a href="#servicos" class="btn btn-outline">
+                    <i class="fas fa-star"></i>
+                    Nossos Serviços
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">440+</span>
+                    <span class="stat-label">Clientes felizes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Anos de experiência</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">34+</span>
+                    <span class="stat-label">Serviços disponíveis</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="deco-circle c1"></div>
+            <div class="deco-circle c2"></div>
+            <div class="deco-circle c3"></div>
+        </div>
+    </section>
+
+    <!-- ================= SERVIÇOS ================= -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossos Serviços</span>
+                <h2 class="section-title">Cabelo & Unha</h2>
+                <p class="section-desc">Oferecemos os melhores tratamentos para você se sentir ainda mais linda</p>
+            </div>
+
+            <div class="servicos-tabs">
+                <button class="tab-btn active" data-tab="cabelo">
+                    <i class="fas fa-cut"></i>
+                    Cabelo
+                </button>
+                <button class="tab-btn" data-tab="unha">
+                    <i class="fas fa-hand-sparkles"></i>
+                    Unha
+                </button>
+            </div>
+
+            <!-- Cabelo -->
+            <div class="tab-content active" id="tab-cabelo">
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Corte Feminino</h3>
+                        <p>Corte moderno e personalizado de acordo com o formato do seu rosto e estilo.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 60,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Coloração</h3>
+                        <p>Tintura profissional com produtos de alta qualidade para um resultado duradouro.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 60,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 2h</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3>Escova & Penteado</h3>
+                        <p>Escova modelada e penteados para ocasiões especiais com acabamento impecável.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 100,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 1h</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Hidratação</h3>
+                        <p>Tratamento profundo para cabelos danificados, com máscaras nutritivas.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 45,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 40 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Progressiva / Botox</h3>
+                        <p>Alisamento e redução de volume com produtos premium e resultados duradouros.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 180,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 3h</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Mechas / Luzes</h3>
+                        <p>Técnicas de mechas, balayage e luzes para iluminar e dar movimento aos fios.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 250,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 2h30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unha -->
+            <div class="tab-content" id="tab-unha">
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h3>Manicure Simples</h3>
+                        <p>Corte, lixamento, cutícula e esmaltação com cuidado e precisão.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 30,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Alongamento em Gel</h3>
+                        <p>Unhas alongadas com gel de alta qualidade, formato e tamanho personalizados.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 90,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 1h30</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-feather"></i>
+                        </div>
+                        <h3>Esmaltação em Gel</h3>
+                        <p>Esmalte em gel com durabilidade de até 15 dias, brilho intenso e acabamento perfeito.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 50,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Nail Art</h3>
+                        <p>Desenhos artísticos, pedrarias, adesivos e decorações exclusivas para suas unhas.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 35,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-hand"></i>
+                        </div>
+                        <h3>Pedicure Completa</h3>
+                        <p>Cuidado completo para os pés: corte, lixamento, cutícula, esfoliação e esmaltação.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 40,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <h3>Spa das Mãos</h3>
+                        <p>Hidratação profunda, esfoliação, massagem relaxante e esmaltação.</p>
+                        <div class="servico-preco">
+                            <span class="preco">R$ 55,00</span>
+                            <span class="tempo"><i class="far fa-clock"></i> 1h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfólio</span>
+                <h2 class="section-title">Nossos Trabalhos</h2>
+                <p class="section-desc">Confira alguns dos resultados incríveis que entregamos</p>
+            </div>
+
+            <div class="galeria-filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="cabelo">Cabelo</button>
+                <button class="filtro-btn" data-filtro="unha">Unha</button>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item" data-categoria="cabelo">
+                    <div class="galeria-img">
+                        <div class="placeholder-img cabelo1">
+                            <i class="fas fa-cut"></i>
+                            <span>Corte Moderno</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Corte em Camadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="unha">
+                    <div class="galeria-img">
+                        <div class="placeholder-img unha1">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <span>Nail Art Floral</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Nail Art Floral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="cabelo">
+                    <div class="galeria-img">
+                        <div class="placeholder-img cabelo2">
+                            <i class="fas fa-palette"></i>
+                            <span>Coloração Ruiva</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Coloração Ruiva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="unha">
+                    <div class="galeria-img">
+                        <div class="placeholder-img unha2">
+                            <i class="fas fa-gem"></i>
+                            <span>Alongamento Gel</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Alongamento em Gel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="cabelo">
+                    <div class="galeria-img">
+                        <div class="placeholder-img cabelo3">
+                            <i class="fas fa-wind"></i>
+                            <span>Escova Modelada</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Escova Modelada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="unha">
+                    <div class="galeria-img">
+                        <div class="placeholder-img unha3">
+                            <i class="fas fa-sparkles"></i>
+                            <span>Esmaltação Gel</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Esmaltação em Gel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= AGENDAMENTO ================= -->
+    <section class="agendar" id="agendar">
+        <div class="container">
+            <div class="agendar-wrapper">
+                <div class="agendar-info">
+                    <span class="section-tag">Agende Agora</span>
+                    <h2 class="section-title">Reserve seu horário</h2>
+                    <p class="section-desc">
+                        Escolha o serviço, a data e o horário que preferir. 
+                        Entraremos em contato para confirmar seu agendamento.
+                    </p>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                <span>Seg a Sex: 9h às 17h </span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Rua Soledade de Minas, 87 - São Mateus - SP</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Telefone</strong>
+                                <span>(11) 97535-9029</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agendar-form-wrapper">
+                    <form class="agendar-form" id="formAgendamento">
+                        <h3>Preencha seus dados</h3>
+
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone / WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail (opcional)</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">Serviço desejado</label>
+                            <select id="servico" name="servico" required>
+                                <option value="" disabled selected>Selecione um serviço</option>
+                                <optgroup label="Cabelo">
+                                    <option value="corte-feminino">Corte Feminino - R$ 60,00</option>
+                                    <option value="coloracao">Coloração - R$ 60,00</option>
+                                    <option value="escova-penteado">Escova & Penteado - R$ 100,00</option>
+                                    <option value="hidratacao">Hidratação - R$ 45,00</option>
+                                    <option value="progressiva">Progressiva / Botox - R$ 180,00</option>
+                                    <option value="mechas">Mechas / Luzes - R$ 250,00</option>
+                                </optgroup>
+                                <optgroup label="Unha">
+                                    <option value="manicure">Manicure Simples - R$ 30,00</option>
+                                    <option value="alongamento-gel">Alongamento em Gel - R$ 90,00</option>
+                                    <option value="esmaltecao-gel">Esmaltação em Gel - R$ 50,00</option>
+                                    <option value="nail-art">Nail Art - R$ 35,00</option>
+                                    <option value="pedicure">Pedicure Completa - R$ 40,00</option>
+                                    <option value="spa-maos">Spa das Mãos - R$ 55,00</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">Data preferida</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hora">Horário preferido</label>
+                                <select id="hora" name="hora" required>
+                                    <option value="" disabled selected>Escolha</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacoes">Observações (opcional)</label>
+                            <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma informação adicional..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Confirmar Agendamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DEPOIMENTOS ================= -->
+    <section class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O que nossas clientes dizem</h2>
+            </div>
+
+            <div class="depoimentos-carousel" id="depoimentosCarousel">
+                <div class="depoimento-card active">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "Adoro vir ao Glamour Beauty! As meninas são super atenciosas e o resultado do meu cabelo sempre fica incrível. Recomendo demais!"
+                    </p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="autor-info">
+                            <strong>Matheusa Garcia Costuda</strong>
+                            <span>Cliente desde 2016</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "A melhor nail art da cidade! Sempre saio com as unhas lindas e recebo muitos elogios. O ambiente é acolhedor e muito limpo."
+                    </p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="autor-info">
+                            <strong>Gabriela Santos de Jesuíta</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="depoimento-texto">
+                        "Fiz a progressiva e o resultado foi maravilhoso! Meu cabelo ficou super liso e brilhante. Profissionais excelentes!"
+                    </p>
+                    <div class="depoimento-autor">
+                        <div class="autor-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="autor-info">
+                            <strong>Leandrina Barrosa dos Santos Filha</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contato</span>
+                <h2 class="section-title">Fale Conosco</h2>
+            </div>
+
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <div class="contato-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>(11) 97535-9029</p>
+                    <a href="https://wa.me/5511987654321" target="_blank" class="contato-link">Enviar mensagem</a>
+                </div>
+
+                <div class="contato-card">
+                    <div class="contato-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@lloficial</p>
+                    <a href="https://instagram.com" target="_blank" class="contato-link">Seguir perfil</a>
+                </div>
+
+                <div class="contato-card">
+                    <div class="contato-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>contato@lloficial.com</p>
+                    <a href="mailto:contato@lloficial.com" class="contato-link">Enviar e-mail</a>
+                </div>
+
+                <div class="contato-card">
+                    <div class="contato-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Endereço</h3>
+                    <p>Rua Soledade de Minas, 87</p>
+                    <span class="contato-link">São Mateus - SP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">L&L</span>
+                        </div>
+                    </div>
+                    <p>Seu salão de beleza em São Mateus. Cabelo, unha e muito carinho para você.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#agendar">Agendar</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Corte de Cabelo</a></li>
+                        <li><a href="#servicos">Coloração</a></li>
+                        <li><a href="#servicos">Manicure</a></li>
+                        <li><a href="#servicos">Alongamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p> L&L - Salão de Beleza.</p>
+                <p class="footer-credit">Projeto PWA - Etec São Mateus</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast de notificação -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Mensagem</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+    <!-- Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('Service Worker registrado!'))
+                .catch(err => console.log('Erro ao registrar SW:', err));
+        }
+    </script>
+</body>
+</html>
